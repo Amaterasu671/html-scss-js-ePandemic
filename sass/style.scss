@@ -1,0 +1,130 @@
+*{
+  top: 0;
+  left: 0;
+}
+body{
+  background-color: #d8d8d8;
+}
+footer .menu-horizontal{
+  top: 95vh;
+}
+%flexColumn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+%menu{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #565656;
+  background-color: #ececec;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  font-family: "Marianne", "Open Sans", Segoe UI, arial, sans-serif;
+  font-weight: bold;
+  border-radius: 0px;
+}
+.menu-horizontal{
+  @extend %menu;
+  width: 100vw;
+  height: 5vh;
+  flex-direction: row;
+}
+.menu-vertical{
+  @extend %menu;
+  width: 15vw;
+  height: 70vh;
+  top: 15vh;
+  flex-direction: column;
+  font-size: 0.8em;
+  overflow: hidden;
+  li{
+    list-style: none;
+    border-top: medium double #565656;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin-left: -40px;
+    background-color: #8080806e;
+    &:hover{
+      cursor: pointer;
+      background-color: #808080;
+      color: #6a6a6a;
+    }
+  }
+  ul{
+    border-bottom: medium double #565656;
+    width: 100%;
+  }
+}
+.infos-block{
+  @extend %menu;
+  width: 80vw;
+  height: 85vh;
+  left: 17.5vw;
+  top: 7.5vh;
+  @extend %flexColumn;
+  .infos-block__title-Container{
+    width: 100%;
+    height: 10%;
+    h1{
+      font-family: Trebuchet MS;
+      text-decoration: underline;
+      color: #E1000F;
+      text-underline-offset: 0.125em;
+      text-decoration-thickness: 0.5em;
+      text-decoration-color: #ff001182;
+      margin-left: 10px;
+    }
+  }
+  .infos-block__infos-container{
+    width: 100%;
+    height: 90%;
+    @extend %flexColumn;
+    .chiffres-container{
+      width: 100%;
+      height: 25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      .chiffres{
+        width: 30%;
+        height: 90%;
+        margin: 0 10px 0 10px;
+        padding: 0 10px 0 10px;
+        text-align: center;
+        h2{
+          font-size: 0.9em;
+        }
+        span{
+          font-size: 2em;
+        }
+        h3{
+          color: black;
+          font-style: italic;
+          font-weight: lighter;
+          font-size: 0.7em;
+        }
+      }
+      #chiffres-1{
+        background-color: #ffd9c5;
+        color: #a74820;
+      }
+      #chiffres-2{
+        background-color: #c3d7ff;
+        color: #455fb0;
+      }
+      #chiffres-3{
+        background-color: #ffd6ea;
+        color: #7d4e5b;
+      }
+    }
+    .text-container{
+      width: 100%;
+      height: 75%;
+      background-color: green;
+    }
+  }
+}
