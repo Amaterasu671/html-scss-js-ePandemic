@@ -57,7 +57,8 @@ footer .menu-horizontal {
   width: 80vw;
   height: 85vh;
   left: 17.5vw;
-  top: 7.5vh; }
+  top: 7.5vh;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); }
   .infos-block .infos-block__title-Container {
     width: 100%;
     height: 10%; }

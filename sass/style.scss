@@ -64,6 +64,7 @@ footer .menu-horizontal{
   height: 85vh;
   left: 17.5vw;
   top: 7.5vh;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   @extend %flexColumn;
   .infos-block__title-Container{
     width: 100%;
