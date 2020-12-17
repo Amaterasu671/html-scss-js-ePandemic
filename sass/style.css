@@ -119,7 +119,8 @@ footer .menu-horizontal {
           flex-direction: column;
           justify-content: space-between;
           align-items: flex-start;
-          overflow: auto; } }
+          overflow: auto;
+          height: 50%; } }
       .infos-block .infos-block__infos-container .chiffres-container .chiffres {
         width: 30%;
         height: 90%;
