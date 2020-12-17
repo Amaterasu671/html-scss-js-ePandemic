@@ -3,10 +3,16 @@
   left: 0;
 }
 body{
-  background-color: #d8d8d8;
+  baackground-color: #d8d8d8;
+  background-image: url('Images/virus.png');
+  background-size: cover;
+  background-repeat: repeat;
 }
 footer .menu-horizontal{
   top: 95vh;
+  @media (max-width: 800px) {
+    font-size: 0.5em;
+  }
 }
 %flexColumn{
   display: flex;
@@ -20,7 +26,7 @@ footer .menu-horizontal{
   justify-content: center;
   align-items: center;
   color: #565656;
-  background-color: #ececec;
+  background-color: #e8e5e5c4;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   font-family: "Marianne", "Open Sans", Segoe UI, arial, sans-serif;
   font-weight: bold;
@@ -31,15 +37,27 @@ footer .menu-horizontal{
   width: 100vw;
   height: 5vh;
   flex-direction: row;
+  @media (max-width: 800px) {
+    font-size: 0.5em;
+  }
+}
+.menu-vertical.inferieur{
+  top: 35vh;
+  height: 57.5vh;
 }
 .menu-vertical{
   @extend %menu;
   width: 15vw;
-  height: 70vh;
-  top: 15vh;
+  height: 25vh;
+  top: 7.5vh;
+  left: 15px;
   flex-direction: column;
   font-size: 0.8em;
   overflow: hidden;
+  @media (max-width: 800px) {
+    left: 0px;
+    font-size: 0.5em;
+  }
   li{
     list-style: none;
     border-top: medium double #565656;
@@ -57,6 +75,15 @@ footer .menu-horizontal{
     border-bottom: medium double #565656;
     width: 100%;
   }
+  .text-container{
+    overflow: auto;
+    p{
+      padding: 10px 10px 10px 10px;
+      font-family: Segoe UI;
+      color: #565656;
+      font-weight: normal;
+    }
+  }
 }
 .infos-block{
   @extend %menu;
@@ -65,7 +92,12 @@ footer .menu-horizontal{
   left: 17.5vw;
   top: 7.5vh;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  opacity: 0;
   @extend %flexColumn;
+  @media (max-width: 800px) {
+    font-size: 0.7em;
+  }
   .infos-block__title-Container{
     width: 100%;
     height: 10%;
@@ -77,12 +109,17 @@ footer .menu-horizontal{
       text-decoration-thickness: 0.5em;
       text-decoration-color: #ff001182;
       margin-left: 10px;
+      &:hover{
+        color: #bd2a34;
+        transition-duration: 0.5s;
+      }
     }
   }
   .infos-block__infos-container{
     width: 100%;
     height: 90%;
     @extend %flexColumn;
+    overflow: auto;
     .chiffres-container{
       width: 100%;
       height: 25%;
@@ -90,12 +127,21 @@ footer .menu-horizontal{
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+      @media (max-width: 800px) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: auto;
+      }
       .chiffres{
         width: 30%;
         height: 90%;
         margin: 0 10px 0 10px;
         padding: 0 10px 0 10px;
         text-align: center;
+        @media (max-width: 800px) {
+          width: 90%;
+        }
         h2{
           font-size: 0.9em;
         }
@@ -109,23 +155,57 @@ footer .menu-horizontal{
           font-size: 0.7em;
         }
       }
-      #chiffres-1{
+      #chiffres-1, #chiffres-4, #chiffres-9{
         background-color: #ffd9c5;
         color: #a74820;
+        &:hover{
+          background-color: #daa183;
+          transition-duration: 0.5s;
+        }
       }
-      #chiffres-2{
+      #chiffres-2, #chiffres-5, #chiffres-7{
         background-color: #c3d7ff;
         color: #455fb0;
+        &:hover{
+          background-color: #6191f3;
+          transition-duration: 0.5s;
+        }
       }
-      #chiffres-3{
+      #chiffres-3, #chiffres-6, #chiffres-8{
         background-color: #ffd6ea;
         color: #7d4e5b;
+        &:hover{
+          background-color: #fb8cc2;
+          transition-duration: 0.5s;
+        }
       }
     }
-    .text-container{
-      width: 100%;
-      height: 75%;
-      background-color: green;
+  }
+  .text-container{
+    width: 100%;
+    height: 75%;
+    p{
+      padding: 10px 10px 10px 10px;
+      font-family: Segoe UI;
+      color: #565656;
+      font-weight: normal;
+    }
+    li{
+      color: red;
+    }
+    .download{
+      width: 30vw;
+      height: 5vh;
+      color: blue;
+      border: 1px solid blue;
+      font-weight: normal;
+      margin-left: 50%;
+      margin-top: -10px;
+      text-align: center;
+      padding-top: 10px;
+      &:hover{
+        background-color: #0000ff29;
+      }
     }
   }
 }

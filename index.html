@@ -13,15 +13,118 @@
     </header>
     <aside class="menu-vertical">
       <ul>
-        <li>Informations officielles</li>
-        <li>Comprendre la COVID-19</li>
-        <li>Tous antiCovid</li>
-        <li>Chiffres et Données</li>
-        <li>Contacts utiles</li>
+        <li onclick="changeSection('infos-block infos')">Informations officielles</li>
+        <li onclick="changeSection('infos-block about-covid')">Comprendre la COVID-19</li>
+        <li onclick="changeSection('infos-block anti-covid')">Tous antiCovid</li>
+        <li onclick="changeSection('infos-block contacts')">Contacts utiles</li>
       </ul>
     </aside>
+    <aside class="menu-vertical inferieur">
+      <div class="text-container">
+        <p style="font-weight : bold">15 décembre : Fin du confinement et mise en place d’un couvre-feu de 20h00 à 6h00.</p>
+        <p>Déplacements inter-régions possibles ; Fin des attestations de déplacement en journée ; Instauration d’un couvre-feu de 20h00 à 06h00 du matin à part pour le réveillon du 24 décembre ; Prolongation pendant 3 semaines de la fermeture des lieux accueillants du public (salles de cinéma, théâtre, musée).</p>
+        <p style="font-weight : bold">20 janvier : Nouvelles ouvertures si les conditions sanitaires le permettent</p>
+        <p>Ouverture des salles de sport et des restaurants ; Reprise des cours en présentiel pour les lycées et si les conditions sanitaires se maintiennent reprise des cours en présentiel dans les universités 15 jours plus tard ; Possible réouverture des stations de ski courant janvier.</p>
+      </div>
+    </aside>
     <main>
-      <section class="infos-block">
+      <section class="infos-block about-covid">
+        <div class="infos-block__title-Container">
+          <h1>L'ORIGINE DU VIRUS</h1>
+        </div>
+        <div class="text-container">
+          <p style="font-weight : bold">La COVID-19, un nouveau coronavirus</p>
+          <p>Le virus identifié en janvier 2020 en Chine est un nouveau coronavirus, nommé SARS-CoV-2. La maladie provoquée par ce coronavirus a été nommée COVID-19 par l’Organisation mondiale de la Santé - OMS. Depuis le 11 mars 2020, l’OMS qualifie la situation mondiale du COVID-19 de pandémie ; c’est-à-dire que l’épidémie est désormais mondiale.</p>
+          <p>Les coronavirus sont une famille de virus qui provoquent des maladies allant d’un simple rhume (certains virus saisonniers sont des coronavirus) à des pathologies plus sévères (comme les détresses respiratoires du MERS, du SRAS ou de la COVID-19).</p>
+          <p style="font-weight : bold">La dangerosité</p>
+          <p>La COVID-19 est un virus dangereux parce que :</p>
+          <ul>
+            <li><p>il est très contagieux : chaque personne infectée va contaminer au moins 3 personnes en l'absence de mesures de protection ;</p></li>
+            <li><p>une personne contaminée mais qui ne ressent pas encore de symptômes peut contaminer d’autres personnes.</p></li>
+          </ul>
+          <p style="font-weight : bold">Les symptômes</p>
+          <p>La COVID-19 peut se manifester par :</p>
+          <ul>
+            <li><p>la fièvre ou la sensation de fièvre (frissons, chaud-froid) ;</p></li>
+            <li><p>la toux ;</p></li>
+            <li><p>des maux de tête, courbatures, une fatigue inhabituelle ;</p></li>
+            <li><p>une perte brutale de l’odorat (sans obstruction nasale), une disparition totale du goût, ou une diarrhée ;</p></li>
+            <li><p>dans les formes plus graves : difficultés respiratoires pouvant mener jusqu’à une hospitalisation en réanimation voire au décès.</p></li>
+          </ul>
+          <p style="font-weight : bold">La transmission</p>
+          <p>La maladie se transmet par ce qu’on appelle les gouttelettes : il s’agit de sécrétions invisibles qui sont projetées lors d’une discussion, d’éternuements ou en toussant. Les postillons correspondent aux gouttelettes visibles, mais la plupart des gouttelettes ne le sont pas.</p>
+          <p>Un contact étroit avec une personne malade est le principal mode de transmission de la maladie : notamment lorsqu’on habite ou travaille avec elle, qu’on a un contact direct à moins d’un mètre lors d’une discussion, d’une toux ou d’un éternuement, sans mesures de protection.</p>
+          <p>Le contact avec des mains non lavées ou des surfaces souillées par des gouttelettes est également à risque de contamination.</p>
+          <p>La maladie se transmet :</p>
+          <ul>
+            <li><p>par projection de gouttelettes (comme les postillons) contaminées par une personne porteuse : en toussant, éternuant ou en cas de contacts étroits en l’absence de mesures de protection (distance physique, mesures barrières, port du masque). Les gouttelettes contaminées sont inhalées par la personne saine, et déclenchent la maladie ;</p></li>
+            <li><p>par contact direct physique (poignée de main, accolade, bise...) entre une personne porteuse et une personne saine. Le virus est ensuite transmis à la personne saine quand elle porte ses mains à la bouche ;</p></li>
+            <li><p>par contact indirect, via des objets ou surfaces contaminées par une personne porteuse. Le virus est ensuite transmis à une personne saine qui manipule ces objets, quand elle porte ses mains à la bouche ;</p></li>
+            <li><p>par l’air, essentiellement dans un espace confiné.</p></li>
+          </ul>
+        </div>
+      </section>
+      <section class="infos-block anti-covid">
+        <div class="infos-block__title-Container">
+          <h1>JE ME PROTÈGE, JE PROTÈGE LES AUTRES</h1>
+        </div>
+        <div class="text-container">
+          <p style="font-weight : bold">Face à l’accélération de l’épidémie, nous devons mobiliser tous les outils à notre disposition. Casser les chaînes de transmission de la COVID-19 est plus que jamais indispensable.</p>
+          <p>Dans ce contexte, l’application TousAntiCovid, lancée par le Gouvernement le 22 octobre 2020, vise à faciliter l’information des personnes qui ont été en contact avec une personne testée positive à la COVID-19 et à accélérer leur prise en charge, en addition de l’action des médecins et de l’Assurance Maladie.</p>
+          <p>En cela, TousAntiCovid complète l’arsenal des mesures barrières déjà existantes face à la COVID-19. Son usage s’avère particulièrement utile dans des lieux ou la concentration de personnes rend le respect de la distanciation sociale difficile à mettre en œuvre.</p>
+          <p style="font-weight : bold">TousAntiCovid : de quoi s’agit-il ?</p>
+          <p>Comme l’a rappelé le Conseil scientifique, les nouvelles technologies constituent un outil utile pour retracer les chaînes de contamination, et ce tout particulièrement lorsque la circulation du virus est élevée.</p>
+          <p>TousAntiCovid est une mise à jour de l’application StopCovid, enrichie par l’accès à des informations factuelles et sanitaires sur l’épidémie. Elle permet à l’utilisateur d’être alerté ou d’alerter les autres en cas d’exposition à la Covid-19. L’utilisateur peut ainsi agir directement pour sa santé et celle des autres en contribuant à rompre les chaînes de transmission et ralentir la propagation du virus.</p>
+          <p>Concrètement, TousAntiCovid permet à l’utilisateur testé positif COVID-19 de prévenir immédiatement les personnes qu’il aurait pu contaminer durant sa période de contagiosité.</p>
+          <p>En regard, l’application alerte les utilisateurs qui ont pu être en contact rapproché avec cette personne testée positive Covid-19 au cours des derniers jours. Cette information va leur permettre de s’isoler immédiatement et d’éviter de contaminer à leur tour de nouvelles personnes.</p>
+          <p>L’utilisation de l’application est fondée sur le volontariat et chaque utilisateur est libre de l’activer et la désactiver au gré des situations. C’est un outil complémentaire essentiel pour lutter contre la COVID-19. Plus l’application sera utilisée, plus vite les cas contacts seront alertés, plus nous aurons collectivement un impact sur le contrôle et l’évolution de l’épidémie.</p>
+          <div class="download">
+            Télécharger l'application TousAntiCovid
+          </div>
+        </div>
+      </section>
+      <section class="infos-block contacts">
+        <div class="infos-block__title-Container">
+          <h1>CONTACTS UTILES</h1>
+        </div>
+        <div class="infos-block__infos-container">
+          <div class="chiffres-container">
+            <div class="chiffres" id="chiffres-4">
+              <h2>En cas de danger immédiat : </h2>
+              <span>17</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+            <div class="chiffres" id="chiffres-5">
+              <h2>Violences sur les enfants : </h2>
+              <span>119</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+            <div class="chiffres" id="chiffres-6">
+              <h2>Violences conjugales : </h2>
+              <span>3919</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+          </div>
+          <div class="chiffres-container">
+            <div class="chiffres" id="chiffres-7">
+              <h2>Urgence pour ma santé : </h2>
+              <span>114</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+            <div class="chiffres" id="chiffres-8">
+              <h2>Infos sur le Coronavirus : </h2>
+              <span>0 800 130 000</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+            <div class="chiffres" id="chiffres-9">
+              <h2>Pharmacie de garde : </h2>
+              <span>0 800 422 957</span>
+              <h3>Dernière mise à jour le 14 Décembre 2020</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="infos-block infos">
         <div class="infos-block__title-Container">
           <h1>INFORMATIONS OFFICIELLES</h1>
         </div>
@@ -44,28 +147,17 @@
             </div>
           </div>
           <div class="text-container">
-
+            <p>Depuis le 15 décembre, les déplacements inter-régions sont autorisés mais un couvre-feu de 20h00 à 06h00 est en vigueur sur l’ensemble du territoire métropolitain. Les sorties et déplacements sans attestations dérogatoires sont donc interdits de 20h00 à 06h00 sous peine d’une amende de 135 € et jusqu’à 3750 € en cas de récidive. Les établissements autorisés à ouvrir ne pourront plus accueillir de public après 20h00. </p>
+            <p style="font-weight : bold">Les déplacements seront tolérés le 24 décembre mais les rassemblements sur la voie publique ne seront pas permis. En revanche, le couvre-feu sera strictement appliqué le soir du 31 décembre.</p>
+            <p>L’objectif du couvre-feu est de limiter les rassemblements durant lesquels les mesures barrières sont moins bien appliquées et où le virus circule rapidement tout en limitant l’impact sur l’économie déjà mise à rude épreuve par l’épidémie.</p>
+            <p style="font-weight : bold">Education</p>
+            <p>Les crèches, écoes, collèges et lycées restent ouverts avec un protocole sanitaire renforcé dont le port du masque obligatoire dès l’âge de 6 ans. La prise en charge périscolaire (garderie, centres aérés) est également maintenue tout comme les structures d’accueil spécialisées pour les enfants en difficulté physique ou psychique notamment les instituts médico-éducatifs.</p>
+            <p>Concernant l’enseignement supérieur, l’ensemble des cours magistraux et travaux dirigés restent en distanciel sauf exception pour certains travaux pratiques. L’accès aux bibliothèques universitaires est possible. Les restaurants universitaires ne pourront que faire de la vente à emporter.</p>
+            <p style="font-weight : bold">Commerces et établissements recevant du public (ERP)</p>
+            <p>Les commerces ont repris leurs activités le 28 novembre dernier tout comme les auto-écoles, les agents immobiliers et les services à domicile avec un protocole sanitaire strict. La mise en place du couvre-feu impose cependant une fermeture à 20h00 pour l’ensemble de ces établissements.</p>
+            <p>Pour limiter la concentration des flux et favoriser l’activité commerciale, les possibilités d’ouverture des commerces le dimanche sont élargies.</p>
+            <p>L’ensemble des secteurs faisant toujours l’objet de fermetures administratives (bars, restaurants, boites de nuit…) bénéficieront d’aide allant jusqu’à 10 000 euros via le fonds de solidarité. La cellule de continuité économique a été réactivée, le dispositif d’activité partielle est étendu jusqu’au 20 janvier 2021 et les prêts garantis par l’Etat sont prolongés jusqu’au 30 juin 2021. Des dispositifs de prise en charge des loyers pour les PME seront prochainement présentés.</p>
           </div>
-        </div>
-      </section>
-      <section class="infos-block about-covid">
-        <div class="infos-block__title-Container">
-          <h1>Comprendre la Covid-19</h1>
-        </div>
-      </section>
-      <section class="infos-block anti-covid">
-        <div class="infos-block__title-Container">
-          <h1>Tous antiCovid</h1>
-        </div>
-      </section>
-      <section class="infos-block chiffres-donnees">
-        <div class="infos-block__title-Container">
-          <h1>Chiffres et Données</h1>
-        </div>
-      </section>
-      <section class="infos-block contacts">
-        <div class="infos-block__title-Container">
-          <h1>Contacts utiles</h1>
         </div>
       </section>
     </main>
@@ -74,5 +166,8 @@
         Copyright Tony 2020
       </nav>
     </footer>
+    <script type="text/javascript" src="script.js">
+
+    </script>
   </body>
 </html>
